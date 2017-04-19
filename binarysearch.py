@@ -1,2 +1,8 @@
 class BinarySearch(list):
-    pass
+
+    def __init__(self, a, b):
+        self.extend(list(range(b, a*b+1, b)))
+        self.length = a
+
+
+print(BinarySearch(20, 1))
